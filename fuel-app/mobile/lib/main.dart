@@ -9,10 +9,12 @@ import 'features/home/home_page.dart';
 Future<void> main() async {
   WidgetsFlutterBinding.ensureInitialized();
 
+  // --- ATENÇÃO: COLOQUE A SUA URL E SUA CHAVE AQUI ---
   await Supabase.initialize(
-    url: 'https://SEU_PROJETO.supabase.co',
-    anonKey: 'SUA_ANON_KEY',
+    url: 'https://veteaytdhbvapultbvup.supabase.co', // Sua URL do Supabase
+    anonKey: 'sb_publishable_D-6G9BSAPwAP5k0oDx47iw_GrtulP5p', // Sua Publishable Key do Supabase
   );
+  // --------------------------------------------------
 
   runApp(
     MultiProvider(
